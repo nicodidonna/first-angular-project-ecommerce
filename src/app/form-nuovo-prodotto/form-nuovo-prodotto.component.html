@@ -1,0 +1,29 @@
+
+<h1>Inserisci un nuovo piatto nel menù</h1>
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Nome</label>
+        <input name="nomeProdotto" [(ngModel)]="nome" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci qui nome del nuovo piatto">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Categoria</label>
+        <select [(ngModel)]="categoriaScelta" class="form-control" id="exampleFormControlSelect1">
+          <option *ngFor="let type of categoria | keyvalue" [ngValue]="type" >{{type.key}}</option>  
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Prezzo</label>
+        <input name="prezzo" [(ngModel)]="prezzo" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci qui il prezzo del nuovo piatto">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Descrizione</label>
+        <textarea name="descrizione" [(ngModel)]="descrizione" placeholder="Inserisci qui la descrizione del nuovo piatto" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Immagine</label>
+        <input name="img" [(ngModel)]="img" type="url" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci qui l'URL dell'immagine del nuovo piatto">
+      </div>
+</form>
+<br>
+<button type="button" class="btn btn-dark"(click)="aggiungiPiatto()">Aggiungi prodotto</button>
+

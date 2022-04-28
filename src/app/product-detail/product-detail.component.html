@@ -1,0 +1,16 @@
+
+<div align="center" class="row" >
+    <div class="col-sm">
+        <div align="center" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{prodottoSelezionato.img}}">
+            <div class="card-body">
+              <p class="card-text"><b>{{prodottoSelezionato.nomeProdotto}}</b></p>
+              <p class="card-text">{{prodottoSelezionato.descrizione}}</p>
+              <p class="card-text">{{prodottoSelezionato.prezzo}}€</p>
+              <p class="card-text">
+                <div><button type="button" class="btn btn-success" (click)="aggiungiCarrello()">Aggiungi al carrello</button></div>
+                 <div><button type="button" class="btn btn-outline-secondary" (click)="aggiungiLike(prodottoSelezionato)"><img src="https://i.pinimg.com/originals/52/55/d0/5255d09ed4f8622b912661775f26bd58.png" width="32px">({{prodottoSelezionato.like}})</button></div>
+              <p class="card-text"><a routerLink="/product-list">Torna alla lista prodotti</a> </p>
+          </div>
+    </div>
+  </div>
