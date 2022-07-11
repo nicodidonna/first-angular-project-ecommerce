@@ -14,7 +14,7 @@ export class FormNuovoProdottoComponent implements OnInit {
   img : string;
   prezzo : number;
   categoria = Categoria;
-  categoriaScelta : Categoria;
+  categoriaScelta : any;
 
   constructor() { }
 
@@ -24,9 +24,10 @@ export class FormNuovoProdottoComponent implements OnInit {
   }
  
   aggiungiPiatto(){
-    this.nuovoProdotto = new Prodotti(PRODUCTS.length+1,this.nome,this.categoriaScelta,this.prezzo,this.descrizione,this.img,0);
+    this.nuovoProdotto = new Prodotti(PRODUCTS.length+1,this.nome,this.categoriaScelta.value,this.prezzo,this.descrizione,this.img,0);
     PRODUCTS.push(this.nuovoProdotto);
     console.log(PRODUCTS);
+    console.log(this.categoriaScelta.value)
   }
   
 }

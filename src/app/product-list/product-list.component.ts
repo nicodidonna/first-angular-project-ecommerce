@@ -17,9 +17,9 @@ export class ProductListComponent implements OnInit {
    
    }
 
-prodottiMenu: Prodotti[];
+listaProdotti: Prodotti[];
   ngOnInit(): void {
-   this.prodottiMenu = this.prodottoServizio.getProdotti();
+   this.listaProdotti = this.prodottoServizio.getProdotti();
   }
 
   showDetail(id) {

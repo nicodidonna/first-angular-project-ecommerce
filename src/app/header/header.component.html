@@ -1,35 +1,13 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-   
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <a class="navbar-brand" routerLink="home"><img src="https://cdn-icons-png.flaticon.com/512/7130/7130267.png" width="80px"></a>
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" routerLink="home">Home</a>
-        <a class="nav-item nav-link" routerLink="product-list">Prodotti</a>
-        <a class="nav-item nav-link" routerLink="">Chi siamo</a>
-        <a class="nav-item nav-link" routerLink="">Dove trovarci</a>
-       <a class="nav-item nav-link" routerLink="lista-utenti">Clienti</a>
-          <div align="right">
-           <a routerLink="carrello" class="nav-item nav-link float-right"><img src="https://cdn-icons-png.flaticon.com/512/34/34568.png" style="width:5%">({{carrello.length}} Prodotti inseriti)</a>
-            <button type="button" class="btn btn-secondary btn-sm" (click)="svuotaCarrello()">Svuota carrello</button>
-         </div>
-      </div>
-    </div>
-  </nav> -->
-
-  
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <header>
-         <img src="./assets/logo.png" width="10%">
+         <img src="assets/logo.png" width="10%">
          <nav>
              <ul class="menu">
                  <li><a routerLink="home">Home</a></li>
                  <li><a routerLink="product-list">Prodotti</a></li>
                  <li><a routerLink="">Progetto</a></li>
                  <li><a routerLink="">Chi sono</a></li>
-                 <!-- <li><a routerLink="lista-utenti">Lista client</a></li> -->
+                 <li><a routerLink="lista-utenti">Lista clienti</a></li>
              </ul>
          </nav>
          <button routerLink="carrello"><i class="fa-solid fa-cart-shopping"></i> {{carrello.length}} Prodotti inseriti</button>

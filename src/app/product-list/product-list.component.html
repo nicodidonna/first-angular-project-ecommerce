@@ -8,11 +8,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let e of prodottiMenu">
-        <td id="productTd">{{e.nomeProdotto}}</td>
-        <td>{{e.categoria}}</td>
-        <td>{{e.prezzo}}€</td>
-        <td><button type="button" class="btn btn-outline-light" (click)="showDetail(e.id)">Scheda Prodotto</button></td>
+      <tr *ngFor="let prodotto of listaProdotti">
+        <td id="productTd">{{prodotto.nomeProdotto}}</td>
+        <td>{{prodotto.categoria}}</td>
+        <td>{{prodotto.prezzo}}€</td>
+        <td><button type="button" class="btn btn-outline-light" (click)="showDetail(prodotto.id)">Scheda Prodotto</button></td>
       </tr>
     </tbody>
   </table>

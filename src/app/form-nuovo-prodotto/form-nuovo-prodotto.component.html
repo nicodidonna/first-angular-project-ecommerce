@@ -3,12 +3,12 @@
 <form>
     <div class="form-group">
         <label for="exampleFormControlInput1">Nome</label>
-        <input name="nomeProdotto" [(ngModel)]="nome" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci qui nome del nuovo piatto">
+        <input name="nomeProdotto" [(ngModel)]="nome" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Inserisci qui nome del nuovo prodotto">
       </div>
       <div class="form-group">
         <label for="exampleFormControlSelect1">Categoria</label>
-        <select [(ngModel)]="categoriaScelta" class="form-control" id="exampleFormControlSelect1">
-          <option *ngFor="let type of categoria | keyvalue" [ngValue]="type" >{{type.key}}</option>  
+        <select name="categoria" [(ngModel)]="categoriaScelta" class="form-control" id="exampleFormControlSelect1">
+          <option *ngFor="let type of categoria | keyvalue" [ngValue]="type">{{type.key}}</option>  
         </select>
       </div>
       <div class="form-group">

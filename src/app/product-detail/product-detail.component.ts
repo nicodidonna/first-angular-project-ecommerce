@@ -21,10 +21,6 @@ export class ProductDetailComponent implements OnInit {
     
   }
   prodottoSelezionato : Prodotti;
-  
-  
-
-  
   id : number = 0;
   constructor(private route: ActivatedRoute, private prodottoServizio : ProdottoServiceService, private servizioCarrello : CarrelloServiceService) { 
     

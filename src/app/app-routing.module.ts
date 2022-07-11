@@ -8,6 +8,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { UserListComponent } from './user-list/user-list.component';
 
 const routes: Routes = [
+  {path: "", redirectTo:"home", pathMatch: "full"},
   {path: "product-list", component:ProductListComponent },
   {path: "product-detail", component:ProductDetailComponent },
   {path: "carrello", component:CarrelloComponent },

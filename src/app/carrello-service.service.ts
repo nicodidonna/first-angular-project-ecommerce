@@ -25,7 +25,7 @@ export class CarrelloServiceService {
 
   getTotaleCarrello(){
     let prezzoTotale : number = 0;
-    this.carrello.forEach(function (prodottoCarrello) {
+    this.carrello.forEach((prodottoCarrello) => {
       prezzoTotale = prezzoTotale + prodottoCarrello.prezzo;
     })
     this.aggiornaCarrelloAddEvent.next(this.carrello);
