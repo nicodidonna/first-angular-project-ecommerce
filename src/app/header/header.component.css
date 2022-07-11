@@ -11,7 +11,7 @@
 }
 
 .menu,
-a,
+.a-list,
 button{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
@@ -36,19 +36,18 @@ header{
 .menu li{
     display: inline-block;
     padding: 0 20px;
-    
 }
 
-.menu li a {
+.a-list {
     transition: all 300ms ease;
 }
 
-.menu a:hover{
+.a-list:hover{
     color: #972d07;
 }
 
 button{
-    padding: 9px 15px;
+    padding: 3px 12px;
     background: #ff4b3e;
     border: none;
     border-radius: 50px;
@@ -61,6 +60,23 @@ button:hover{
     background-color: #972d07;
 }
 
-.menu li:nth-child(1) a{
-    font-weight: bold;
+
+#svuotaCarrello{
+    font-size: 10px;
+}
+
+#svuotaCarrello:hover{
+    font-size: 12px;
+    transition: all 1s;
+}
+
+#carrelloButton{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.active{
+    font-weight: 500;
+    font-size: larger;
 }

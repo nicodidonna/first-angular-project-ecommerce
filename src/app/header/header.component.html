@@ -1,15 +1,17 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <header>
-         <img src="assets/logo.png" width="10%">
+         <a routerLink="" style="width: 90px; height: 35px;"><img src="assets/logo.png" style="width:100%;"></a>
          <nav>
              <ul class="menu">
-                 <li><a routerLink="home">Home</a></li>
-                 <li><a routerLink="product-list">Prodotti</a></li>
-                 <li><a routerLink="">Progetto</a></li>
-                 <li><a routerLink="">Chi sono</a></li>
-                 <li><a routerLink="lista-utenti">Lista clienti</a></li>
+                 <li><a class="a-list" routerLink="/" [routerLinkActive]="['active']">Home</a></li>
+                 <li><a class="a-list" routerLink="product-list" [routerLinkActive]="['active']">Prodotti</a></li>
+                 <li><a class="a-list" routerLink="404" [routerLinkActive]="['active']">Progetto</a></li>
+                 <li><a class="a-list" routerLink="404" [routerLinkActive]="['active']">Chi sono</a></li>
+                 <li><a class="a-list" routerLink="lista-utenti" [routerLinkActive]="['active']">Lista clienti</a></li>
              </ul>
          </nav>
-         <button routerLink="carrello"><i class="fa-solid fa-cart-shopping"></i> {{carrello.length}} Prodotti inseriti</button>
-         <button  (click)="svuotaCarrello()">Svuota carrello</button>
+         <button>
+          <a routerLink="carrello" id="carrelloButton"><i class="fa-solid fa-cart-shopping"></i> {{carrello.length}} Prodotti inseriti</a><br>
+          <a id="svuotaCarrello" (click)="svuotaCarrello()">Svuota carrello</a>
+        </button>
       </header>

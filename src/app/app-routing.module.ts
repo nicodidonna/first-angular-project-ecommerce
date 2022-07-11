@@ -8,7 +8,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { UserListComponent } from './user-list/user-list.component';
 
 const routes: Routes = [
-  {path: "", redirectTo:"home", pathMatch: "full"},
+  {path: "", pathMatch: "full",redirectTo:"home"},
   {path: "product-list", component:ProductListComponent },
   {path: "product-detail", component:ProductDetailComponent },
   {path: "carrello", component:CarrelloComponent },
@@ -18,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
